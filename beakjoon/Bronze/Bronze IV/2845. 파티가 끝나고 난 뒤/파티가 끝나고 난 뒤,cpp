@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int l, p;
+	cin >> l >> p;
+
+	int people[5];
+	for (int i = 0; i < 5; i++) {
+		cin >> people[i];
+	}
+
+	for (int person : people) {
+		cout << person - (l * p) << " ";
+	}
+
+	return 0;
+}
