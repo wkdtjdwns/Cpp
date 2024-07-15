@@ -19,7 +19,6 @@ int main() {
 
 	if (r) { cout << "0 " << rNum; }
 	else { cout << "1 " << rNum; }
-
-
-    return 0;
+	
+	return 0;
 }
