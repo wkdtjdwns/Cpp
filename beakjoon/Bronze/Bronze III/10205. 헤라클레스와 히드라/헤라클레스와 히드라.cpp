@@ -9,7 +9,6 @@ using namespace std;
 
 int main() {
 	fastIo;
-
 	
 	int h; cin >> h;
 	for (int i = 1; i <= h; i++)
