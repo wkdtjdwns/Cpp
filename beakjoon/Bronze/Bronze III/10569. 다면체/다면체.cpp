@@ -9,21 +9,16 @@ using namespace std;
 
 int main() {
 	fastIo;
-	
-	int h; cin >> h;
-	for (int i = 1; i <= h; i++)
-	{
-		int cnt; cin >> cnt;
-		string head; cin >> head;
 
-		cout << "Data Set " << i << ":\n";
-		for (char c : head)
-		{
-			if (c == 'c') { cnt++; }
-			else { cnt--; }
-		}
+	int t, v, e; cin >> t;
+	vector<int> result;
+	for (int i = 0; i < t; i++) {
+		cin >> v >> e;
+		result.push_back(2 - v + e);
+	}
 
-		cout << cnt << "\n\n";
+	for (auto k : result) {
+		cout << k << "\n";
 	}
 
 	return 0;
