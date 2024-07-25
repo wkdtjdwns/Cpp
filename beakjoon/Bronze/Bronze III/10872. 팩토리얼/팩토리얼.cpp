@@ -13,10 +13,10 @@ int factorial(int n) {
 }
 
 int main() {
-	fastIo;
+    fastIo;
 
     int n; cin >> n;
     cout << factorial(n);
 
-	return 0;
+    return 0;
 }
