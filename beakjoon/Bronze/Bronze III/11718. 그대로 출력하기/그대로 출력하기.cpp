@@ -9,7 +9,7 @@
 using namespace std;
 
 int main() {
-    fastIo;
+	fastIo;
 
 	string str;
 	while (getline(cin, str))
@@ -17,5 +17,5 @@ int main() {
 		cout << str << "\n";
 	}
 
-    return 0;
+	return 0;
 }
