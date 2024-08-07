@@ -11,31 +11,31 @@ using namespace std;
 int main() {
 	fastIo;
 
-    char result, snack[] = { 'S', 'N', 'U' };
-    float good, efficiency[3];
+	char result, snack[] = { 'S', 'N', 'U' };
+	float good, efficiency[3];
+	
+	for (int i = 0; i < 3; i++)
+	{
+	float price, weight; cin >> price >> weight;
+	price *= 10;
+	weight *= 10;
+	if (price >= 5000) {
+	    price -= 500;
+	}
+	
+	efficiency[i] = weight / price;
+	good = max(good, efficiency[i]);
+	}
+	
+	for (int i = 0; i < 3; i++)
+	{
+	if (good == efficiency[i]) {
+	    result = snack[i];
+	    break;
+	}
+	}
 
-    for (int i = 0; i < 3; i++)
-    {
-        float price, weight; cin >> price >> weight;
-        price *= 10;
-        weight *= 10;
-        if (price >= 5000) {
-            price -= 500;
-        }
-
-        efficiency[i] = weight / price;
-        good = max(good, efficiency[i]);
-    }
-
-    for (int i = 0; i < 3; i++)
-    {
-        if (good == efficiency[i]) {
-            result = snack[i];
-            break;
-        }
-    }
-
-    cout << result;
+	cout << result;
 
 	return 0;
 }
