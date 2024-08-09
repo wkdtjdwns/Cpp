@@ -12,16 +12,17 @@ int main() {
 	fastIo;
 
 	int t, y, x; cin >> t;
-  for (int i = 0; i < t; i++) {
-      cin >> y >> x;
-
-      int result = -1;
-      if (y >= 12 && x >= 4) {
-          result = 11 * x + 4;
-      }
-
-      cout << result << "\n";
-  }
+	for (int i = 0; i < t; i++)
+	{
+		cin >> y >> x;
+		
+		int result = -1;
+		if (y >= 12 && x >= 4) {
+			result = 11 * x + 4;
+		}
+		
+		cout << result << "\n";
+	}
 
 	return 0;
 }
